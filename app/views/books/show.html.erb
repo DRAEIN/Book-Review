@@ -17,7 +17,10 @@
   <div class="col-md-4">
 
     <!-- review/rating session -->
-
+    <%= render @book.reviews %>
+    <div>
+      <%= link_to 'New Review', new_book_review_path(@book) %>
+    </div>
   </div>
 </div>
 
